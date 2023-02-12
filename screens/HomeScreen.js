@@ -21,13 +21,21 @@ const HomeScreen = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.headerText}>Quiz Dźwiękowo Obrazkowy</Text>
-      <View style={[styles.modeSelector, { paddingBottom: mode ? 40 : 65 }]}>
+      <Text style={styles.headerText}>Quiz Dźwiękowo-Obrazkowy</Text>
+      <View style={[styles.modeSelector, { paddingBottom: mode ? 40 : 50 }]}>
         {!mode && (
           <>
             <Text style={[styles.subheaderText, { marginBottom: 55 }]}>
               Wybierz Tryb:
             </Text>
+            <TouchableOpacity
+              style={[styles.ButtonContainer, { marginBottom: 27 }]}
+              onPress={() => {
+                navigation.navigate("Training");
+              }}
+            >
+              <Text style={styles.ButtonText}>TRENING</Text>
+            </TouchableOpacity>
             <TouchableOpacity
               style={styles.ButtonContainer}
               onPress={() => {
@@ -67,7 +75,6 @@ const HomeScreen = ({ navigation }) => {
                 <Text style={{ fontSize: 30, marginBottom: 3 }}>&lt;</Text>
               </TouchableOpacity>
               <TouchableOpacity
-                afn
                 style={styles.ButtonContainer}
                 onPress={() => {
                   navigation.navigate("Quiz", { maxPoints: count });
@@ -78,6 +85,7 @@ const HomeScreen = ({ navigation }) => {
             </View>
           </>
         )}
+        <Text style={styles.credits}>Kamil Woźniak & Patryk Krajewski</Text>
       </View>
     </View>
   );
@@ -134,5 +142,10 @@ const styles = StyleSheet.create({
     borderRadius: 3,
     backgroundColor: "white",
     width: "15%",
+  },
+  credits: {
+    color: "white",
+    position: "absolute",
+    bottom: 8,
   },
 });

@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "SoundPictureQuiz",
+    "name": "Quiz Dźwiękowo Obrazkowy",
     "slug": "SoundPictureQuiz",
     "version": "1.0.0",
     "orientation": "landscape",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",

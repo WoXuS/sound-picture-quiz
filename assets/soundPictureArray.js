@@ -59,6 +59,26 @@ export const soundPictureArray = [
       image: require("../images/dolphin.jpg"),
       sound: require("../sounds/dolphin.mp3"),
     },
+    {
+      image: require("../images/donkey.jpg"),
+      sound: require("../sounds/donkey.mp3"),
+    },
+    {
+      image: require("../images/goat.jpg"),
+      sound: require("../sounds/goat.mp3"),
+    },
+    {
+      image: require("../images/horse.jpg"),
+      sound: require("../sounds/horse.mp3"),
+    },
+    {
+      image: require("../images/turkey.jpg"),
+      sound: require("../sounds/turkey.mp3"),
+    },
+    {
+      image: require("../images/wolf.jpg"),
+      sound: require("../sounds/wolf.mp3"),
+    },
   ];
 
   export default {
