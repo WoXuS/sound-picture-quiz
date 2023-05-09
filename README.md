@@ -31,19 +31,19 @@ You can install the app by downloading and installing [this APK](https://github.
 
 To get started, clone the repository and install the dependencies:
 
-\```bash
+```bash
 git clone https://github.com/WoXuS/sound-picture-quiz.git
 cd sound-picture-quiz
 npm install
-\```
+```
 
 ## Usage
 
 To start the development server, run:
 
-\```bash
+```bash
 npm start
-\```
+```
 
 Open the Expo app on your Android device and scan the QR code to view the Sound Picture Quiz application.
 
